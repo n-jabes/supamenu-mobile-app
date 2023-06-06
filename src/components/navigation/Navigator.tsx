@@ -59,7 +59,7 @@ function AppNavigator() {
         getToken();
     }, []);
 
-    if (!isAuthenticated) return <AuthNavigator />;
+    // if (!isAuthenticated) return <AuthNavigator />;
 
     return (
         <Tabs.Navigator
@@ -80,7 +80,7 @@ function AppNavigator() {
                     borderColor: 'white',
                     elevation: 10,
                 },
-                tabBarButton: (props) => {
+                tabBarButton: (props: any) => {
                     return (
                         <View {...props}>
                             <View
